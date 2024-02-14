@@ -1,0 +1,57 @@
+﻿<Page x:Class="SpaceInvader.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:SpaceInvader"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      xmlns:um="using:Uno.Material"
+
+      Background="{ThemeResource BackgroundBrush}">
+  <StackPanel
+      HorizontalAlignment="Center"
+      Padding="30">
+
+    <TextBlock AutomationProperties.AutomationId="TitleTextBlock"
+      Text="Space Invaders"
+      Margin="0 0 0 50"
+      FontFamily="8-bit Operator+ 8"
+      FontWeight="Bold"
+      FontSize="80"
+      VerticalAlignment="Top"
+      HorizontalAlignment="Center"/>
+
+    <Button
+      x:Name="StartGameButton"
+      Content="Start Game"
+      VerticalAlignment="Center"
+      HorizontalAlignment="Center"
+      Background="Transparent"
+      Foreground="White"
+      Padding="0 20 0 0"
+      Margin="0 0 0 20"
+      FontFamily="8-bit Operator+ 8"
+      FontSize="60"/>
+
+    <Button AutomationProperties.AutomationId="ScoresButton"
+      Content="Scores"
+      VerticalAlignment="Center"
+      HorizontalAlignment="Center"
+      Background="Transparent"
+      Foreground="White"
+      Padding="0 20 0 0"
+      Margin="0 0 0 20"
+      FontFamily="8-bit Operator+ 8"
+      FontSize="60"/>
+
+    <Button AutomationProperties.AutomationId="ControlsButton"
+      Content="Controls"
+      VerticalAlignment="Center"
+      HorizontalAlignment="Center"
+      Background="Transparent"
+      Foreground="White"
+      Padding="0 20 0 0"
+      Margin="0 0 0 20"
+      FontFamily="8-bit Operator+ 8"
+      FontSize="60"/>
+
+  </StackPanel>
+</Page>
